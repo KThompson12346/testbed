@@ -12,10 +12,10 @@ class BinarySearchModel:
             if list[mid_point] == search_for:
                 return mid_point
 
-            elif list[mid_point] > search_for:
+            elif list[mid_point] > search_for: # checks the left side of list
                 return self.search(list, list_start, mid_point-1, search_for)
 
-            else:
+            else: # checks the right side of the list
                 return self.search(list, mid_point+1, list_end, search_for)
 
         else:
