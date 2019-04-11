@@ -1,6 +1,6 @@
 class BinarySearchModel:
 
-    def sort_arr(self, list): # Uses library function to sort list
+    def sort_list(self, list): # Uses library function to sort list
         list.sort()
         return list
 
