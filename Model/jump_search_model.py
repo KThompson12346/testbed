@@ -1,5 +1,5 @@
 # Jump Search
-# Searches a list in what is known as blocks, and then the correct block is searched using linear search. by correct block the block that holds the value you want to search for. An array/list is split into blocks, which is just a small section of the array/list, that is searched using linear search
+# Searches a sorted list in what is known as blocks, and then the correct block is searched using linear search. by correct block the block that holds the value you want to search for. An array/list is split into blocks, which is just a small section of the array/list, that is searched using linear search
 # Sits in between binary and linear search as it uses linear when searching.
 import math
 class JumpSearchModel:
