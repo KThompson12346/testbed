@@ -8,7 +8,7 @@
 class MergeSortModel:
 
     def merge_sort(self, list):
-        if len(list) > 1:
+        if len(list) > 1: # if more than one item in the list
             mid_point = len(list) // 2 # finding the mid point of the list
             left_side = list[:mid_point] # first half of list
             right_side = list[mid_point:] # second half of list
