@@ -29,7 +29,7 @@ class MergeSortModel:
                     right += 1
                 new += 1 # on either of the cases 'new' index is incremented
 
-            # last two while loops check that both sides of the list have been complete emptied and no elements are left standing, a clean up check
+            # last two while loops check that both sides of the list have been completely emptied and no elements are left standing, a clean up check
             while left < len(left_side):
                 list[new] = left_side[left]
                 left += 1
