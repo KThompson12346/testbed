@@ -8,7 +8,7 @@ class Controller:
             numbers_list.append(random.randint(1, up_to))
         return numbers_list
 
-    def reset_list(self, list):
+    def clear_list(self, list):
         list.clear()
         return list
 
