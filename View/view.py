@@ -7,7 +7,7 @@ class View:
     button_frame = Frame(window)
     canvas_frame = Frame(window)
 
-    canvas = Canvas(canvas_frame, width=500, height=500, background='white')
+    canvas = Canvas(canvas_frame, width=600, height=700, background='white')
 
     title_label = Label(title_frame, text='Searching & Sorting Algorithm Testbed', font='Helvetica 20 bold')
 
@@ -33,6 +33,4 @@ class View:
     button_frame.grid(row=1, column=0)
     canvas_frame.grid(row=1, column=1)
 
-    window.mainloop()
-
-view = View()
+    # window.mainloop()
