@@ -4,8 +4,9 @@ view_dir = (os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))+ '/Vi
 sys.path.append(view_dir)
 import view
 
-
 class Controller:
+
+    view = view.View()
 
     def initialize_list_elements(self, num_of_elements, up_to):
         numbers_list = [] # is the list of elements that will be used by the searching and sorting algorithms
@@ -20,16 +21,6 @@ class Controller:
             colour_code = colour_code + choice(hex_chars)
         return colour_code
 
-    def animation(self, my_list):
-        x = 220
-        y = 500
-        bar_width = 15
-        for item in my_list:
-            bar = view.canvas.create_rectangle(x, y, x+barwidth, y-(item*15), fill=random_colour_code())
-            x += bar_width + 5
-            time.sleep(0.2)
-            view.canvas.update()
-
     def clear_list(self, list):
         list.clear()
         return list
@@ -37,5 +28,13 @@ class Controller:
     def print_list(self, list):
         print('list elements = {}'.format(list))
 
-view = view.View()
-view.window.mainloop()
+    def draw(self, list):
+        x = 220
+        y = 500
+        bar_width = 15
+        for item in list:
+            bar = view.canvas.create_rectangle(x, y, x+bar_width, y-(item*15), fill=random_colour_code())
+            x += bar_width + 5
+            time.sleep(0.2)
+            canvas.update()
+        pass

@@ -1,11 +1,16 @@
 from tkinter import *
+import sys, os.path
+controller_dir = (os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))+ '/Controller/')
+sys.path.append(controller_dir)
+import controller
 
 class View:
+
     window = Tk()
     window.title('Algorithm Testbed')
     title_frame = Frame(window) # a frame used to display the title of the program
-    button_frame = Frame(window)
-    canvas_frame = Frame(window)
+    button_frame = Frame(window) # a frame to hold the buttons
+    canvas_frame = Frame(window) # a frame for the canvas
 
     canvas = Canvas(canvas_frame, width=600, height=700, background='white')
 
@@ -33,4 +38,4 @@ class View:
     button_frame.grid(row=1, column=0)
     canvas_frame.grid(row=1, column=1)
 
-    # window.mainloop()
+    window.mainloop()
